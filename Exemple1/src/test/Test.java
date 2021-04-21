@@ -6,6 +6,7 @@ public class Test {
 
 	public static void main(String[] args) {
 
+		//this is scanner class to input data from console
 		Scanner reader = new Scanner(System.in);
 
 		Person joan = new Person();
