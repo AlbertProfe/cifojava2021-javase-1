@@ -36,6 +36,7 @@ public class Test {
 				// and print it to screen
 				System.out.println("\nTicket:");
 				System.out.println("-------------------------\n");
+				System.out.println(userName + " is a vip user\n");
 				System.out.println("The amount of your buy is: " + userBuy);
 				System.out.println("Your discount is: " + "25%");
 				System.out.println("Your total discout is: " + (userBuy * 25 / 100));
@@ -46,8 +47,8 @@ public class Test {
 
 				System.out.println("\nTicket:");
 				System.out.println("-------------------------\n");
-				System.out.println("The amount of your buy is: " + userBuy);
 				System.out.println(userName + " is NOT a vip user\n");
+				System.out.println("The amount of your buy is: " + userBuy);
 				System.out.println("Your discount is: " + "0%");
 				System.out.println("Your total discout is: " + "0");
 				System.out.println("Your should pay (with the discount): " + userBuy + "\n");
