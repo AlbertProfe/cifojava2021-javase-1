@@ -10,7 +10,10 @@ public class Test {
 
 	public static void main(String[] args) {
 		// scope number #2
-
+		int discount = 0;
+		int totalDiscount = 0;
+		int amountToPay = 0;
+		
 		while (true) {
 			// scope #6
 			Scanner reader = new Scanner(System.in);
@@ -29,33 +32,34 @@ public class Test {
 			System.out.println("User Type: " + userType);
 			System.out.println("User Buy: " + userBuy);
 			
-			int discount = 0;
-			int totalDiscount = 0;
-			int amountToPay = 0;
 			
 			if (userType.equals("vip")) {
 				// scope number #3
-				// i have to code 25% discount
-
+				discount = 25;
+				totalDiscount = userBuy * 25 / 100;
+				amountToPay = userBuy - totalDiscount;
+				
 			} else if (userType.equals("regular")) {
 				// scope number #7
-				// i have to code 15% discount
+				discount = 15;
+				totalDiscount = userBuy * 15 / 100;
+				amountToPay = userBuy - totalDiscount;
 				
 			} else if (userType.equals("new")) {
 				// scope number #8
-				// i have to code 0% discount
+				discount = 0;
+				totalDiscount = userBuy * 0 / 100;
+				amountToPay = userBuy - totalDiscount;
 				
 			} else {
 				// scope number #9
-				
+				System.out.println("Please, you have to write \"vip\", \"regular\" or \"new\". Try another time ...");
 			}
-			// + "25%"
-			// + (userBuy * 25 / 100)
-			// + (userBuy - (userBuy * 25 / 100)) + "\n"
+			
 			System.out.println("\nTicket:");
 			System.out.println("-------------------------\n");
 			System.out.println("The amount of your buy is: " + userBuy);
-			System.out.println("Your discount is: " + discount);
+			System.out.println("Your discount is: " + discount + "% of the total amount buoght");
 			System.out.println("Your total discount is: " + totalDiscount);
 			System.out.println("Your should pay (with the discount): " + amountToPay + "\n");
 
@@ -71,4 +75,5 @@ public class Test {
 		// reader <<<< i don't see this variable from scope #2
 
 	}
+	
 }
