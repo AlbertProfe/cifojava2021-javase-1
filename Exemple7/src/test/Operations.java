@@ -3,13 +3,11 @@ package test;
 import java.util.Scanner;
 
 public class Operations {
-
+	// scope number #7
 	public static void clientBuyProcess() {
 		// scope number #3
-		int discount = 0;
-		int totalDiscount;
-		int amountToPay;
-
+		int discount = 0, totalDiscount, amountToPay;
+	
 		while (true) {
 			// scope #4
 			Scanner reader = new Scanner(System.in);
@@ -34,15 +32,14 @@ public class Operations {
 
 				if (userType.equals("vip")) discount = 25;
 				if (userType.equals("regular"))	discount = 15;
-				if (userType.equals("new")) discount = 0;
+				if (userType.equals("new")) discount = 1;
 				
 				totalDiscount = userBuy * discount / 100;
 				amountToPay = userBuy - totalDiscount;
 				printTicket(userBuy, discount, totalDiscount, amountToPay);
 				
-			} else System.out.println("Please, you have to write \"vip\", \"regular\" or \"new\". Try another time ...\n");
+			} else System.out.println("\nPlease, you have to write \"vip\", \"regular\" or \"new\".\nTry another time ...\n");
 		
-			reader.close();
 			// I am closing the while so also the while scope
 		}
 		
@@ -51,7 +48,7 @@ public class Operations {
 	}
 
 	private static void printTicket(int userBuy, int discount, int totalDiscount, int amountToPay) {
-		// scope number #9
+		// scope number #5
 		System.out.println("\nTicket:");
 		System.out.println("-------------------------\n");
 		System.out.println("The amount of your buy is: " + userBuy);
@@ -63,7 +60,7 @@ public class Operations {
 	}
 
 	private static double addTax(int amountToPay) {
-		// scope number #10
+		// scope number #6
 		double tax = 0.21;
 
 		// i am doing an EXPLICIT casting to be able to use amountToPay as a DOUBLE
