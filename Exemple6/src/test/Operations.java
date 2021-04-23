@@ -13,7 +13,7 @@ public class Operations {
 		while (true) {
 			// scope #4
 			Scanner reader = new Scanner(System.in);
-			System.out.println("Tell me your user name (quit to exit):");
+			System.out.println("Tell me your user name (\"quit\" to exit):");
 			String userName = reader.nextLine();
 			
 			if (userName.equals("quit")) break;
