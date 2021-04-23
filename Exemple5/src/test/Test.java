@@ -71,11 +71,28 @@ public class Test {
 		System.out.println("The amount of your buy is: " + userBuy);
 		System.out.println("Your discount is: " + discount + "% of the total amount buoght");
 		System.out.println("Your total discount is: " + totalDiscount);
-		System.out.println("Your should pay (with the discount): " + amountToPay + "\n");
+		System.out.println("Your should pay (with the discount): " + amountToPay);
+		System.out.println("Your should pay (with taxes): " + addTax(amountToPay) + "\n");
+		
+		
 	}
 
-	public static void addTax () {
+	public static int addTax (int amountToPay) {
 		// scope number #10
-		///to-do
+		double tax = 0.21;
+		
+		//i am doing an EXPLICIT casting to be able to use amountToPay as a DOUBLE
+		//double taxToPay = (double) amountToPay * tax;
+		//System.out.println(taxToPay);
+				
+		//i don't need an EXPLICIT casting cause taxToPay is double so it has ... decs...
+		double taxToPay =  amountToPay * tax;
+		
+		double amountToPayWithTaxes = amountToPay + taxToPay;
+		
+		return (int) amountToPayWithTaxes ;
+		
 	}
+	
+	
 }
