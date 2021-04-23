@@ -70,7 +70,7 @@ public class Operations {
 		// i don't need an EXPLICIT casting cause taxToPay is double so it has ...
 		// decimals...
 		double taxToPay = amountToPay * tax;
-		System.out.println("Your should pay taxes: " + taxToPay);
+		System.out.println("You should pay taxes: " + taxToPay);
 
 		double amountToPayWithTaxes = amountToPay + taxToPay;
 
