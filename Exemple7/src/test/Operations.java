@@ -55,8 +55,8 @@ public class Operations {
 		System.out.println("The amount of your buy is: " + userBuy);
 		System.out.println("Your discount is: " + discount + "% of the total amount bought");
 		System.out.println("Your total discount is: " + totalDiscount);
-		System.out.println("Your should pay (with the discount): " + amountToPay);
-		System.out.println("Your should pay (with taxes): " + addTax(amountToPay) + "\n");
+		System.out.println("You should pay (with the discount): " + amountToPay);
+		System.out.println("You should pay (with taxes): " + addTax(amountToPay) + "\n");
 
 	}
 
