@@ -3,7 +3,7 @@ package test;
 import java.util.Scanner;
 
 public class Operations {
-
+	// scope number #11
 	public static void clientBuyProcess() {
 		// scope number #3
 		int discount = 0;

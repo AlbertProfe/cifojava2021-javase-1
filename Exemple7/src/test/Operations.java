@@ -7,8 +7,8 @@ public class Operations {
 	public static void clientBuyProcess() {
 		// scope number #3
 		int discount = 0;
-		int totalDiscount = 0;
-		int amountToPay = 0;
+		int totalDiscount;
+		int amountToPay;
 
 		while (true) {
 			// scope #4
@@ -42,9 +42,11 @@ public class Operations {
 				
 			} else System.out.println("Please, you have to write \"vip\", \"regular\" or \"new\". Try another time ...\n");
 		
-
+			reader.close();
 			// I am closing the while so also the while scope
 		}
+		
+		
 
 	}
 

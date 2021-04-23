@@ -6,7 +6,7 @@ public class Test {
 	
 	public static void main(String[] args) {
 		// scope number #2
-		
+				
 		System.out.println("Welcome ... loading ...\n");
 		
 		Operations.clientBuyProcess();
