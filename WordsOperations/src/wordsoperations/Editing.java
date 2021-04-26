@@ -19,14 +19,14 @@ public class Editing {
 		Operations.linebreak();
 		
 		Operations.print("Domain: ");
-		Operations.print(wordtoEdit.substring(wordtoEdit.indexOf("@") + 1, wordtoEdit.length()));
+		Operations.print(wordtoEdit.substring(wordtoEdit.indexOf("@"), wordtoEdit.length()));
 		Operations.linebreak();
 		
 		Operations.print("User: ");
 		Operations.print(wordtoEdit.substring(0,wordtoEdit.indexOf("@")));
 		Operations.linebreak();
 		
-		Operations.print("New emial: ");
+		Operations.print("New email: ");
 		Operations.print(wordtoEdit.substring(0,wordtoEdit.indexOf("@")) + "@" +  "java.com");
 		Operations.linebreak();
 		
