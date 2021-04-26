@@ -1,7 +1,7 @@
 package wordsoperations;
 
 public class Operations {
-	// scope #8
+	// scope #21
 	// int pepe = 19;
 
 	public static void print(String wordtoPrint) {
@@ -12,6 +12,11 @@ public class Operations {
 	public static void print(char chartoPrint) {
 		// scope #4
 		System.out.print(chartoPrint);
+	}
+	
+	public static void print(int intToPrint) {
+		// scope #3
+		System.out.print(intToPrint);
 	}
 
 	public static void linebreak() {
@@ -37,12 +42,13 @@ public class Operations {
 	}
 
 	public static void printStringH(String wordtoPrint) {
-		// scope #9
+		// scope #8
 		int i = 0;
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 
 		while (i < sizeWordtoPrint) {
+			// scope #9
 			print(wordtoPrint.charAt(i));
 			print(" ");
 			i++; // i = i +1;
@@ -57,6 +63,7 @@ public class Operations {
 		int sizeWordtoPrint = wordtoPrint.length();
 
 		while (i < sizeWordtoPrint) {
+			// scope #11
 			print(wordtoPrint.charAt(i));
 			linebreak();
 			i++; // i = i +1;
@@ -64,28 +71,30 @@ public class Operations {
 	}
 
 	public static void printStringHDash(String wordtoPrint) {
-		// scope #11
+		// scope #12
 		int i = 0;
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 
 		while (i < sizeWordtoPrint) {
+			// scope #13
 			print(wordtoPrint.charAt(i));
-			print(" - ");
+			if (i < (sizeWordtoPrint - 1) ) print(" - ");
+			
 			i++; // i = i +1;
 		}
 		linebreak();
 	}
 
 	public static void printStringVOffset(String wordtoPrint) {
-		// scope #12
+		// scope #14
 
 		int i = 0;
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 
 		while (i < sizeWordtoPrint) {
-
+			// scope #8
 			print(" ");
 			print(" ");
 			print(" ");
@@ -99,24 +108,47 @@ public class Operations {
 		linebreak();
 	}
 
-	public static void printStringDiagonal (String wordtoPrint) {
-		// scope #12
-		
+	public static void printStringDiagonal(String wordtoPrint) {
+		// scope #16
+
 		int i = 0;
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 
 		while (i < sizeWordtoPrint) {
-			int j = 0;
-			while (j < i) {
-				print(" ");print(" ");
-				j++;
+			// scope #17
+			int blanktoprint = 0;
+			while (blanktoprint < i) {
+				// scope #18
+				print(" ");
+				print(" ");
+				print(" ");
+				blanktoprint++;
 			}
+
 			print(wordtoPrint.charAt(i));
 			linebreak();
-			
+
 			i++; // i = i +1;
 		}
 
-	linebreak();
-}}
+		linebreak();
+	}
+
+	public static void printStringBackWards(String wordtoPrint) {
+		// scope #19
+		
+		linebreak();
+		int i = wordtoPrint.length() -1 ;
+
+		while ( i > -1) {
+			// scope #20
+			// scope #9
+			print(wordtoPrint.charAt(i));
+			print(" ");
+			i--; 
+		}
+		linebreak();
+	}
+
+}
