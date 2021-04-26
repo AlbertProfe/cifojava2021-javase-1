@@ -60,7 +60,6 @@ public class Operations {
 			print(wordtoPrint.charAt(i));
 			linebreak();
 			i++; // i = i +1;
-
 		}
 	}
 
@@ -75,10 +74,49 @@ public class Operations {
 			print(" - ");
 			i++; // i = i +1;
 		}
+		linebreak();
 	}
 
-	public static void printStringDiagonal(String wordtoPrint) {
+	public static void printStringVOffset(String wordtoPrint) {
 		// scope #12
+
+		int i = 0;
+		linebreak();
+		int sizeWordtoPrint = wordtoPrint.length();
+
+		while (i < sizeWordtoPrint) {
+
+			print(" ");
+			print(" ");
+			print(" ");
+			print(" ");
+			print(" ");
+			print(wordtoPrint.charAt(i));
+			linebreak();
+
+			i++; // i = i +1;
+		}
+		linebreak();
 	}
 
-}
+	public static void printStringDiagonal (String wordtoPrint) {
+		// scope #12
+		
+		int i = 0;
+		linebreak();
+		int sizeWordtoPrint = wordtoPrint.length();
+
+		while (i < sizeWordtoPrint) {
+			int j = 0;
+			while (j < i) {
+				print(" ");print(" ");
+				j++;
+			}
+			print(wordtoPrint.charAt(i));
+			linebreak();
+			
+			i++; // i = i +1;
+		}
+
+	linebreak();
+}}

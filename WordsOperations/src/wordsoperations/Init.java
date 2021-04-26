@@ -17,6 +17,9 @@ public class Init {
 		Operations.printStringH(word);
 		Operations.printStringV(word);
 		Operations.printStringHDash(word);
+		Operations.printStringVOffset(word);
+		Operations.printStringDiagonal(word);
+
 		
 		
 		System.out.println("\nBye bye my friend...");
