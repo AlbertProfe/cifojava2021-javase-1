@@ -16,7 +16,7 @@ public class Init {
 		Operations.printString(word);
 		
 		
-		System.out.println("Bye bye my friend...");
+		System.out.println("\nBye bye my friend...");
 		
 		
 		

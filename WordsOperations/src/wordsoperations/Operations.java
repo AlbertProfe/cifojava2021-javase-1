@@ -22,8 +22,9 @@ public class Operations {
 		linebreak();
 		int sizeWordtoPrint = wordtoPrint.length();
 		while (i < sizeWordtoPrint) {
-			print("loop number: " + (i + 1) + " - " );
 			
+			print("counter: " + (i) + " - " );
+			print("loop number: " + (i + 1) + " - " );
 			print("letter: " + wordtoPrint.charAt(i));
 			linebreak();
 
