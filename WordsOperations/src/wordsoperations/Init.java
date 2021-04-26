@@ -15,6 +15,8 @@ public class Init {
 		//Operations.linebreak();
 		//Operations.printString(word);
 		Operations.printStringH(word);
+		Operations.printStringV(word);
+		Operations.printStringHDash(word);
 		
 		
 		System.out.println("\nBye bye my friend...");
