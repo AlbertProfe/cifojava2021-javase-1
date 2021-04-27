@@ -13,7 +13,7 @@ public class Init {
 
 		//Operations.operationsString(word);
 		//Editing.subEditing (word);
-		EmailManagment.createAccount(reader);
+		EmailManagment.createAccount(word);
 		
 		System.out.println("\nBye bye my friend...");
 
