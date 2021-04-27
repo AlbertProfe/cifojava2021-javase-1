@@ -11,27 +11,14 @@ public class Init {
 		System.out.println("Write some string ...");
 		String word = reader.nextLine();
 
-		//operationsString(word);
-		Editing.subEditing (word);
-		
-		
+		//Operations.operationsString(word);
+		//Editing.subEditing (word);
+		EmailManagment.createAccount(reader);
 		
 		System.out.println("\nBye bye my friend...");
 
 	}
 
-	public static void operationsString(String word) {
-
-		Operations.print(word);
-		Operations.linebreak();
-		Operations.printString(word);
-		Operations.printStringH(word);
-		Operations.printStringV(word);
-		Operations.printStringHDash(word);
-		Operations.printStringVOffset(word);
-		Operations.printStringDiagonal(word);
-		Operations.printStringBackWards(word);
-
-	}
+	
 
 }

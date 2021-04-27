@@ -1,11 +1,10 @@
 package wordsoperations;
 
 public class Editing {
-	
-	
+	// scope #23
 	
 	public static void subEditing (String wordtoEdit) {
-		
+		// scope #24
 		Operations.print("Substring from 3: ");
 		Operations.print(wordtoEdit.substring(3));
 		Operations.linebreak();

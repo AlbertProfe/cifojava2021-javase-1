@@ -1,9 +1,23 @@
 package wordsoperations;
 
 public class Operations {
-	// scope #21
+	// scope #22
 	// int pepe = 19;
 
+	public static void operationsString(String word) {
+		// scope #21
+		print(word);
+		linebreak();
+		printString(word);
+		printStringH(word);
+		printStringV(word);
+		printStringHDash(word);
+		printStringVOffset(word);
+		printStringDiagonal(word);
+		printStringBackWards(word);
+
+	}
+	
 	public static void print(String wordtoPrint) {
 		// scope #3
 		System.out.print(wordtoPrint);
@@ -143,7 +157,7 @@ public class Operations {
 
 		while ( i > -1) {
 			// scope #20
-			// scope #9
+			
 			print(wordtoPrint.charAt(i));
 			print(" ");
 			i--; 
