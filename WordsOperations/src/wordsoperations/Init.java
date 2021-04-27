@@ -12,8 +12,8 @@ public class Init {
 		String word = reader.nextLine();
 
 		//Operations.operationsString(word);
-		//Editing.subEditing (word);
-		EmailManagment.createAccount(word);
+		Editing.subEditing (word);
+		//EmailManagment.createAccount(word);
 		
 		System.out.println("\nBye bye my friend...");
 
