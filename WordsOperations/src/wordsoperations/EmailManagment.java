@@ -4,16 +4,15 @@ import java.util.Random;
 //import java.util.Scanner;
 
 public class EmailManagment {
-
+	// scope #25
 	public static void createAccount(String word) {
-
-		
-		//testRandom();
+		// scope #26
+		// testRandom();
 
 	}
 
 	public static void testRandom() {
-		
+		// scope #27
 		String password = "_";
 
 		int count = 0;
@@ -34,38 +33,46 @@ public class EmailManagment {
 		System.out.println(createCharRandom());
 
 	}
-	
-	public static String createUser (String word) {
+
+	public static String createUser(String word) {
+		// scope #28
 		// to-do
-		return word;}
-	
-	public static String createEmail (String word) {
+		return word;
+	}
+
+	public static String createEmail(String word) {
+		// scope #29
 		// to-do
-		return word;}
-	
-	public static String createPassword () {
+		return word;
+	}
+
+	public static String createPassword() {
+		// scope #30
 		// to-do
 		String password = "";
-		return password;}
-	
-	public static void printUserAccount () {
+		return password;
+	}
+
+	public static void printUserAccount() {
+		// scope #31
 		// to-do
-		}
+	}
 
 	public static int createIntRandom(int top) {
-
+		// scope #32
 		Random rand = new Random();
 
 		// Generate random integers in range 0 to top, if top=10 random 0 to 9
-		return rand.nextInt(top);
+		int intRandom = rand.nextInt(top);
+		return intRandom;
 
 	}
 
 	public static char createCharRandom() {
-
-		Random rand = new Random();
+		// scope #33
+		// Random rand = new Random();
 		String alphabetChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-		String alphabetChars2 = "!·$%&/()=?¿?=)()/*-+^*Ç¨_:;;:_+/";
+		// String alphabetChars2 = "!·$%&/()=?¿?=)()/*-+^*Ç¨_:;;:_+/";
 
 		// Generate random char in range 0 to top, if top=10 random 0 to 9
 
