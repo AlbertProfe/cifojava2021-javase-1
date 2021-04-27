@@ -8,7 +8,10 @@ public class EmailManagment {
 	public static void createAccount(String word) {
 		// scope #26
 		// testRandom();
-
+		createUser( word);
+		createEmail(word);
+		createPassword();
+		printUserAccount();
 	}
 
 	public static void testRandom() {
