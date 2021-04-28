@@ -3,7 +3,7 @@ package listoperations;
 import java.util.ArrayList;
 
 public class Init {
-
+	// scope #1
 	public static void main(String[] args) {
 
 		ArrayList<String> fruits;
@@ -11,6 +11,7 @@ public class Init {
 
 		// ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
 
+		
 		addToArray(fruits);
 		containsToArray(fruits);
 		removeFromArray(fruits);
