@@ -5,6 +5,7 @@ import java.util.Random;
 
 public class EmailManagment {
 	// scope #25
+	
 	public static void createAccount(String word) {
 		// scope #26
 		// testRandom();
