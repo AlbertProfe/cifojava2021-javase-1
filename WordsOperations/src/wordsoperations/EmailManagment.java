@@ -9,33 +9,10 @@ public class EmailManagment {
 		// scope #26
 		// testRandom();
 		
-		createUser(word);
+		String user = createUser(word);
 		createEmail(word);
 		createPassword();
 		printUserAccount();
-	}
-
-	public static void testRandom() {
-		// scope #27
-		String password = "_";
-
-		int count = 0;
-		while (count < 5) {
-			int i = createIntRandom(10000);
-			char j = createCharRandom();
-
-			password = password + i + j;
-
-			System.out.println(password);
-			count++;
-
-		}
-
-		System.out.println(createIntRandom(1500));
-		System.out.println(createCharRandom());
-		System.out.println(createIntRandom(200));
-		System.out.println(createCharRandom());
-
 	}
 
 	public static String createUser(String word) {
@@ -85,5 +62,27 @@ public class EmailManagment {
 		return charRandom;
 
 	}
+	
+	public static void testRandom() {
+		// scope #27
+		String password = "_";
 
+		int count = 0;
+		while (count < 5) {
+			int i = createIntRandom(10000);
+			char j = createCharRandom();
+
+			password = password + i + j;
+
+			System.out.println(password);
+			count++;
+
+		}
+
+		System.out.println(createIntRandom(1500));
+		System.out.println(createCharRandom());
+		System.out.println(createIntRandom(200));
+		System.out.println(createCharRandom());
+
+	}
 }
