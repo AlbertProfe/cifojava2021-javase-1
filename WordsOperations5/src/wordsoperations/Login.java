@@ -37,7 +37,7 @@ public class Login {
 			System.out.println("Total attempts: " + count + "/3");
 			count++;
 
-			if (count == 4) System.out.println("Total attempts: 3/3, account blocked!");
+			if (count == 4) System.out.println("Account blocked!");
 			
 		} while (count < 4);
 		
