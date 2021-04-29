@@ -45,4 +45,13 @@ public class AccountCreation {
 
 		}
 
+		public static String accountToString (String user, String email, String password) {
+			
+			//to-do
+			
+			return null;
+			
+			
+		}
 }
+
