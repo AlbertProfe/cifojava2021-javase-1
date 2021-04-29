@@ -7,13 +7,11 @@ public class AccountManagment {
 	// scope #3
 
 	// ----------------------------------------------
-	// ----------------- INICIO DEL TRABAJO ------
-	// ----------------------------------------------
+	// ---------  INICIO DEL TRABAJO ----------------
 	// ----------------------------------------------
 
 	public static void createAccount(String userToCreateAccount) {
 		// scope #4
-		// testRandom();
 
 		String user = createUser(userToCreateAccount);
 		String email = createEmail(userToCreateAccount);
