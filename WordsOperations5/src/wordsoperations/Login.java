@@ -12,10 +12,11 @@ public class Login {
 		int count = 1;
 		String userConsole;
 		String passwordConsole;
+		System.out.println("\nLogin :");
 
 		do {
 
-			System.out.println("Enter Username : ");
+			System.out.println("\nEnter Username : ");
 			userConsole = reader.next();
 
 			System.out.println("Enter Password : ");
