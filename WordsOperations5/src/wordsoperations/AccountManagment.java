@@ -11,6 +11,7 @@ public class AccountManagment {
 		String email = AccountCreation.createEmail(userToCreateAccount);
 		String password = AccountCreation.createPassword();
 		AccountCreation.printUserAccount(user, email, password);
+		
 		String account = AccountCreation.accountToString(user, email, password);
 		
 		return account;

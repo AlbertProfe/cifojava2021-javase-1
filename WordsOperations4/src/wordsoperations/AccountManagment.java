@@ -12,7 +12,10 @@ public class AccountManagment {
 		String password = AccountCreation.createPassword();
 		AccountCreation.printUserAccount(user, email, password);
 		
-		return null;
+		
+		String account = AccountCreation.accountToString(user, email, password);
+		
+		return account;
 	}
 
 }
