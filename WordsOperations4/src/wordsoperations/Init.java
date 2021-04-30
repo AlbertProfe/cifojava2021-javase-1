@@ -12,7 +12,7 @@ public class Init {
 		System.out.println("Type user (name and surname) to create Account ...");
 		String userToCreateAccount = reader.nextLine();
 
-		boolean login = false;
+		
 		
 		String account = AccountManagment.createAccount(userToCreateAccount);
 		
@@ -21,15 +21,17 @@ public class Init {
 		String user = Utils.fromStringToUser (account);
 		String password = Utils.fromStringToPassword (account);
 		
-		login = Login.logIn(reader, user, password);
+		boolean  isValidated  =  Login.validateAccount (reader, user, password);
 		
-		if (login) {
+		
+		
+		if (isValidated) {
 			
 			//to-do
 			//AccountUpdating
 			//AccountDeleting
 			
-			login = false;
+			isValidated = false;
 		}
 		
 		System.out.println("\nBye bye my friend...");

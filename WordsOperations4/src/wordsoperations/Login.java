@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Login {
 
-	public static boolean logIn(Scanner reader, String user, String password) {
+	public static boolean validateAccount(Scanner reader, String user, String password) {
 
 		System.out.println(user);
 		System.out.println(password);
@@ -13,10 +13,22 @@ public class Login {
 		String userConsole;
 		String passwordConsole;
 
+		// to-do
+
+		// get user and password
+		// scanner ask for user and password console
+
+		
+
+		// create a while () or if () that checks user
+		// and password against userconsole and password console
+
+		// it will return a isValidated boolean
+
 		do {
 
-			//to-do
-			
+			// to-do
+
 		} while (count < 4);
 		
 		
