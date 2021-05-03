@@ -11,8 +11,6 @@ public class Init {
 		
 		System.out.println("Type user (name and surname) to create Account ...");
 		String userToCreateAccount = reader.nextLine();
-
-		
 		
 		String account = AccountManagment.createAccount(userToCreateAccount);
 		
@@ -23,8 +21,6 @@ public class Init {
 		
 		boolean  isValidated  =  Login.validateAccount (reader, user, password);
 		
-		
-		
 		if (isValidated) {
 			
 			//to-do
@@ -32,7 +28,7 @@ public class Init {
 			//AccountDeleting
 			
 			isValidated = false;
-		}
+		} 
 		
 		System.out.println("\nBye bye my friend...");
 		reader.close();

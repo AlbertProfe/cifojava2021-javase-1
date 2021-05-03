@@ -1,14 +1,19 @@
 package wordsoperations;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Login {
 
-	public static boolean validateAccount (Scanner reader, String user, String password) {
+	public static boolean validateAccount (Scanner reader, ArrayList<String> account) {
 
 		//System.out.println(user);
 		//System.out.println(password);
 
+		String user = account.get(1);
+		String password = account.get(3);
+		
+		
 		int count = 1;
 		String userConsole;
 		String passwordConsole;

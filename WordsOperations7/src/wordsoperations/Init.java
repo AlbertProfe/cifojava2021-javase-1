@@ -12,7 +12,7 @@ public class Init {
 		System.out.println("Type user (name and surname) to create Account ...");
 		String userToCreateAccount = reader.nextLine();
 
-		boolean login = false;
+		
 		
 		String account = AccountManagment.createAccount(userToCreateAccount);
 		
@@ -22,9 +22,9 @@ public class Init {
 		String email = Utils.fromStringToEmail (account);
 		String password = Utils.fromStringToPassword (account);
 		
-		login = Login.logIn(reader, user, password);
+		boolean  isValidated  =  Login.validateAccount (reader, user, password);
 		
-		if (login) {
+		if (isValidated) {
 			
 			
 			user = AccountUpdating.updateUser(reader, user);
@@ -35,7 +35,7 @@ public class Init {
 			//fake deleting ...
 			AccountDeleting.deleteAccount(user, email, password);
 			
-			login = false;
+			isValidated = false;
 		}
 		
 		System.out.println("\nBye bye my friend...");
